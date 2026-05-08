@@ -17,8 +17,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      
+      - name: Install zavisumosti
+      - run: make install
 
+      - name: Run linter
+      - run: make lint
+
+      - name: Run tests
+      - run: make test
+
+      
       - name: Hexlet project check
         uses: hexlet/project-action@release
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
+
+      - name: Run tests with coverage
+        run: make test-coverage
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Нужен для доступа к PR
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

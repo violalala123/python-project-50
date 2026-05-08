@@ -1,4 +1,5 @@
-import argparse # Импортируем стандартную библиотеку для работы с CLI
+import argparse  # Импортируем стандартную библиотеку для работы с CLI
+
 from gendiff.generate_diff import generate_diff
 
 
@@ -27,6 +28,7 @@ def main():
     args = parser.parse_args()
     result = generate_diff(args.first_file, args.second_file)
     print(result)
+
 
 # Это стандартная проверка: запускать main() только если файл вызван напрямую
 if __name__ == '__main__':
