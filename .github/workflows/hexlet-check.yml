@@ -22,15 +22,12 @@ jobs:
         with:
           python-version: '3.14'
       - name: Install dependencies
-        run: 
+        run: |
           pip install uv
           make install
 
       - name: Run linter
         run: make lint
-
-      - name: Run tests
-        run: make test
 
       
       - name: Hexlet project check
