@@ -7,5 +7,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/violalala123/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/violalala123/python-project-50/actions)
 
-### Generate_diff:
+### Generate_diff_json:
 [![asciicast](https://asciinema.org/a/oDwpdARmG7x1QbfI.svg)](https://asciinema.org/a/oDwpdARmG7x1QbfI)
+
+### Generate_diff_yml:
+[![asciicast](https://asciinema.org/a/V4fXFME2UzCXX5B0.svg)](https://asciinema.org/a/V4fXFME2UzCXX5B0)

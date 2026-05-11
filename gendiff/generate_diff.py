@@ -1,5 +1,5 @@
-import json
-
+from pathlib import Path 
+from gendiff.parser import parse
 '''
 def generate_diff(file1, file2):
     data1 = json.load(open(file1))
@@ -64,9 +64,12 @@ def render(data):
 
 
 def generate_diff(file1, file2):
-    data1 = json.load(open(file1))
-    data2 = json.load(open(file2))
-    
+   
+    with open(file1, 'r') as f1, open(file2, 'r') as f2:
+        content1 = f1.read()
+        content2 = f2.read()
+    data1 = parse(content1, Path(file1).suffix)
+    data2 = parse(content2, Path(file2).suffix)
     keys = sorted(data1 | data2)
     result = []
     for key in keys:
