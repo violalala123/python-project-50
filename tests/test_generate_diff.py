@@ -16,6 +16,7 @@ def test_generate_diff_json():
     
     assert generate_diff(path1, path2) == resultfile
 
+
 def test_generate_diff_yml():
     path1 = get_fixture_path('file1.yml')
     path2 = get_fixture_path('file2.yml')

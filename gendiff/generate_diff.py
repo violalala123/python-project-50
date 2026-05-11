@@ -1,5 +1,7 @@
-from pathlib import Path 
+from pathlib import Path
+
 from gendiff.parser import parse
+
 '''
 def generate_diff(file1, file2):
     data1 = json.load(open(file1))
