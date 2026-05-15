@@ -7,6 +7,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/violalala123/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/violalala123/python-project-50/actions)
 
+### Пример работы gendiff
+[![asciicast](https://asciinema.org/a/gsV1hJz19eLAee3c.svg)](https://asciinema.org/a/gsV1hJz19eLAee3c)
+
+### Пример работы gendiff стиль plain
+[![asciicast](https://asciinema.org/a/PvKDe4OKNQWLYrbk.svg)](https://asciinema.org/a/PvKDe4OKNQWLYrbk)
+
 ### Generate_diff_json:
 [![asciicast](https://asciinema.org/a/oDwpdARmG7x1QbfI.svg)](https://asciinema.org/a/oDwpdARmG7x1QbfI)
 

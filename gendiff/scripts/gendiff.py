@@ -5,16 +5,16 @@ from gendiff.generate_diff import generate_diff
 
 def main():
     # 1. Создаем объект-парсер. 
-    # prog='gendiff' — задает имя программы, которое будет в строке usage.
-    # description — это текст, который идет сразу после usage.
+    
     parser = argparse.ArgumentParser(
         prog='gendiff',
         description='Compares two configuration files and shows a difference.'
     )
     parser.add_argument(
         '-f', '--format',
-        metavar='FORMAT',
-        help='set format of output'
+        choices=['stylish', 'plain'], 
+        default='stylish',
+        help='set format of output (default: "stylish")'
     )
     # 2. Описываем аргументы, которые программа ОБЯЗАНА получить.
     # Это позиционные аргументы. Их порядок важен.
@@ -26,7 +26,7 @@ def main():
     # Если пользователь ввел -h или --help, argparse САМ выведет справку 
     # и завершит работу программы. Нам даже не нужно писать print.
     args = parser.parse_args()
-    result = generate_diff(args.first_file, args.second_file)
+    result = generate_diff(args.first_file, args.second_file, args.format)
     print(result)
 
 

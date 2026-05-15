@@ -11,8 +11,8 @@
         }
         setting6: {
             doge: {
-              - wow: 
-              + wow: so much
+              - list: wow
+              + list: awesome
             }
             key: value
           + ops: vops
@@ -34,11 +34,11 @@
         }
     }
   + group3: {
+        fee: 100500
         deep: {
             id: {
                 number: 45
             }
         }
-        fee: 100500
     }
 }
