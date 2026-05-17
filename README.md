@@ -4,9 +4,6 @@
 
 [![hexlet-check](https://github.com/violalala123/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/violalala123/python-project-50/actions/workflows/hexlet-check.yml)
 
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/violalala123/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/violalala123/python-project-50/actions)
-
 ### Пример работы gendiff stylish
 [![asciicast](https://asciinema.org/a/gsV1hJz19eLAee3c.svg)](https://asciinema.org/a/gsV1hJz19eLAee3c)
 
