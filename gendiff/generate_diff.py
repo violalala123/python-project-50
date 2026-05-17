@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from gendiff.build_tree import build_tree
+from gendiff.formats.json import render as render_json
 from gendiff.formats.plain import render as render_plain
 from gendiff.formats.stylish import render as render_stylish
 from gendiff.parser import parse
@@ -14,7 +15,7 @@ def generate_diff(file1, file2, format_name='stylish'):
     data1 = parse(content1, Path(file1).suffix)
     data2 = parse(content2, Path(file2).suffix)
     
-    # Строим внутреннее дерево (diff)
+    # Строим внутреннее дерево
     
     diff = build_tree(data1, data2)
     
@@ -24,4 +25,6 @@ def generate_diff(file1, file2, format_name='stylish'):
     
     if format_name == 'plain':
         return render_plain(diff)
-
+     
+    if format_name == 'json':
+        return render_json(diff)

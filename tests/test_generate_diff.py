@@ -28,7 +28,7 @@ def test_generate_diff_yml():
 
 
 def test_generate_diff_plain():
-    # Пути к твоим глубоким файлам
+    # Пути к файлам
     path1 = get_fixture_path('file1.json')
     path2 = get_fixture_path('file2.json')
     
@@ -38,6 +38,19 @@ def test_generate_diff_plain():
     
     # Проверяем, что наша функция выдает ровно то, что в файле
     assert generate_diff(path1, path2, 'plain') == expected
+
+
+def test_generate_diff_json_format():
+    # Пути к файлам
+    path1 = get_fixture_path('file1.json')
+    path2 = get_fixture_path('file2.json')
+    
+    # Читаем результат из созданного файла
+    with open(get_fixture_path('result_json.txt'), 'r') as f:
+        expected = f.read()
+    
+    # Проверяем
+    assert generate_diff(path1, path2, 'json') == expected
 
 
 def test_generate_diff_json_tree():
