@@ -13,5 +13,7 @@ wheels/
 .coverage
 coverage.xml
 htmlcov/
+.vscode/
+
 
 .ruff_cache/
