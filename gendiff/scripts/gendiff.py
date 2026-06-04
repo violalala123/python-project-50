@@ -1,6 +1,6 @@
 import argparse  # Импортируем стандартную библиотеку для работы с CLI
 
-from gendiff.generate_diff import generate_diff
+from gendiff.scripts.generate_diff import generate_diff
 
 
 def main():

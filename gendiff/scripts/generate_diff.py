@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from gendiff.build_tree import build_tree
-from gendiff.formats.json import render as render_json
-from gendiff.formats.plain import render as render_plain
-from gendiff.formats.stylish import render as render_stylish
-from gendiff.parser import parse
+from gendiff.formatters.json import render as render_json
+from gendiff.formatters.plain import render as render_plain
+from gendiff.formatters.stylish import render as render_stylish
+from gendiff.scripts.build_tree import build_tree
+from gendiff.scripts.parser import parse
 
 
 def generate_diff(file1, file2, format_name='stylish'):

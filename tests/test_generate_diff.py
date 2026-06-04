@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from gendiff.generate_diff import generate_diff
+from gendiff.scripts.generate_diff import generate_diff
 
 
 def get_fixture_path(file_name):

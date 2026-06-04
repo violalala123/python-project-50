@@ -1,4 +1,4 @@
-from gendiff.formats.to_string import to_string
+from gendiff.formatters.to_string import to_string
 
 
 def render(data, depth=1):
