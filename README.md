@@ -1,11 +1,13 @@
 ### Инструкция по установке
 1. Клонируйте репозиторий на свой компьютер:
-   ```bash
+    ```bash
     git clone [https://github.com/violalala123/python-project-50.git](https://github.com/violalala123/python-project-50.git)
    cd python-project-50
 2. Установите проект и все необходимые зависимости одной командой:
+    ```bash
     make install
 3. Запустите утилиту:
+    ```bash
     uv run gendiff <путь_к_файлу1> <путь_к_файлу2>
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=violalala123_python-project-50&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=violalala123_python-project-50)
